@@ -3,7 +3,7 @@ import setupKnex, { Knex } from 'knex'
 import { env } from './env'
 
 const connection =
-  env.DATABASE_CLIENT === 'sqlite'
+  env.DATABASE_CLIENT === 'sqlite3'
     ? {
         filename: env.DATABASE_URL,
       }
